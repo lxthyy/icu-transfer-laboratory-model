@@ -5,11 +5,11 @@ abstract: >-
   Analysis pipeline reproducing every estimate reported in a retrospective prediction
   model study of 30-day intensive care unit transfer based on routine laboratory data,
   including the primary model, temporal validation, the complete 30-day follow-up
-  sensitivity analysis and the Kaplan-Meier correction for administrative censoring.
+  sensitivity analysis and the Kaplan-Meier and inverse-probability-of-censoring corrections for administrative censoring.
 authors:
   - family-names: Li
     given-names: Xin
-version: 1.42
+version: 1.42.1
 date-released: 2026-11-25
 license: MIT
 repository-code: "https://github.com/lxthyy/icu-transfer-laboratory-model"
