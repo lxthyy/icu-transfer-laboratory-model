@@ -1,0 +1,20 @@
+{
+  "upload_type": "software",
+  "title": "Analysis code for: Routine laboratory data for predicting intensive care unit transfer",
+  "description": "Analysis pipeline reproducing every estimate reported in a retrospective prediction model study of 30-day intensive care unit transfer based on routine laboratory data: cohort construction, L1-penalised logistic regression at the natural prevalence, temporal validation, six classes of sensitivity analysis, the complete 30-day follow-up analysis, and the Kaplan-Meier correction for administrative censoring. The package contains code only; record-level data are not included.",
+  "creators": [
+    {
+      "name": "Li, Xin",
+      "affiliation": "Department of Laboratory Medicine"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "clinical prediction model",
+    "intensive care unit transfer",
+    "routine laboratory data",
+    "calibration",
+    "decision curve analysis"
+  ]
+}
