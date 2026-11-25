@@ -101,36 +101,36 @@ L2,匹配样本三臂,"C matched, weights kept｜保留变量",37,res_a5_matched
 L2,匹配样本三臂,"C matched, weights kept｜测试AUC",0.8157,res_a5_matched_arms.csv,,c050403247d9904a,
 L2,匹配样本三臂,"C matched, weights kept｜AP",0.5497,res_a5_matched_arms.csv,,c050403247d9904a,
 L2,匹配样本三臂,"C matched, weights kept｜Brier",0.1758,res_a5_matched_arms.csv,,c050403247d9904a,
-L3,Table 1,"Age, years, median (IQR)",61.00 (52.00–71.00) | 50.00 (31.00–61.00) | +0.82,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 1 行
-L3,Table 1,"Male sex, n (%)","617 (55.6%) | 85,025 (47.0%) | +0.17",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 2 行
-L3,Table 1,"First laboratory result obtained in: Outpatient clinic, n (%)","0 (0.0%) | 111,578 (61.7%) | ",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 3 行
-L3,Table 1,"First laboratory result obtained in: Inpatient ward, n (%)","1,109 (100.0%) | 68,287 (37.8%) | ",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 4 行
-L3,Table 1,"First laboratory result obtained in: Other, n (%)",0 (0.0%) | 973 (0.5%) | ,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 5 行
-L3,Table 1,"Laboratory results in the 48-h window, n, median (IQR)",52.00 (47.00–90.00) | 33.00 (23.00–46.00) | +1.19,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 6 行
-L3,Table 1,"Results outside the reference interval, n, median (IQR)",8.00 (4.00–15.00) | 3.00 (1.00–7.00) | +0.81,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 7 行
-L3,Table 1,"Proportion of results outside the reference interval, median (IQR)",0.19 (0.09–0.34) | 0.12 (0.04–0.23) | +0.45,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 8 行
-L3,Table 1,"Interval to first blood draw, h, median (IQR)",0.00 (0.00–0.00) | 0.00 (0.00–0.00) | +0.08,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 9 行
-L3,Table 1,"White cell count, x10^9/L, median (IQR)",6.18 (4.76–8.74) | 6.13 (4.87–7.92) | +0.05,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 10 行
-L3,Table 1,"Haemoglobin, g/L, median (IQR)",125.00 (110.00–138.00) | 131.00 (120.00–142.00) | -0.34,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 11 行
-L3,Table 1,"Platelet count, x10^9/L, median (IQR)",204.00 (159.00–254.00) | 224.00 (180.00–273.00) | -0.22,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 12 行
-L3,Table 1,"Neutrophil percentage, %, median (IQR)",68.70 (58.10–80.90) | 62.90 (54.50–71.80) | +0.45,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 13 行
-L3,Table 1,"Lymphocyte count, x10^9/L, median (IQR)",1.25 (0.81–1.70) | 1.61 (1.18–2.14) | -0.02,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 14 行
-L3,Table 1,"Creatinine, umol/L, median (IQR)",71.56 (57.09–94.62) | 70.33 (55.17–88.08) | +0.01,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 15 行
-L3,Table 1,"Albumin, g/L, median (IQR)",38.54 (34.87–41.36) | 41.95 (38.44–44.75) | -0.63,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 16 行
-L3,Table 1,"Total bilirubin, umol/L, median (IQR)",12.49 (9.59–16.99) | 12.49 (9.53–16.66) | +0.10,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 17 行
-L3,Table 1,"Prothrombin time, s, median (IQR)",11.10 (10.50–12.10) | 10.90 (10.30–11.70) | +0.14,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 18 行
-L3,Table 1,"Fibrinogen, g/L, median (IQR)",3.89 (3.27–5.00) | 3.72 (3.15–4.56) | +0.22,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 19 行
-L3,Table 1,"Sodium, mmol/L, median (IQR)",141.00 (138.70–142.80) | 141.20 (139.50–142.70) | -0.17,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 20 行
-L3,Table 1,"Potassium, mmol/L, median (IQR)",4.09 (3.84–4.36) | 4.16 (3.91–4.42) | -0.08,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 21 行
-L3,Table 2,Events / prevalence,"1,109 / 0.61% | 1,109 / 1.64% | 1,109 / 50%",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 1 行
-L3,Table 2,Penalty C / retained coefficients,0.03 / 46 of 193 | 0.1 / 64 of 193 | 1.0 / 97 of 193,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 2 行
-L3,Table 2,Training AUC,0.870 | 0.761 | 0.858,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 3 行
-L3,Table 2,Test AUC (95% CI),0.883 (0.867–0.899) | 0.749 (0.721–0.776) | 0.816 (0.790–0.841),Manuscript_v1.42.docx,,6e37b632a345fcaa,第 4 行
-L3,Table 2,Average precision,0.108 | 0.241 | 0.555,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 5 行
-L3,Table 2,Calibration slope,1.168 | 1.048 | -,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 6 行
-L3,Table 2,Observed / expected,0.958 | 0.971 | 1.007 (0.500 vs 0.497),Manuscript_v1.42.docx,,6e37b632a345fcaa,第 7 行
-L3,Table 2,Brier score,0.00573 | 0.01388 | 0.1712,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 8 行
-L3,Table 2,Sensitivity at Youden threshold,0.874 | 0.649 | 0.814,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 9 行
-L3,Table 2,Specificity at Youden threshold,0.769 | 0.689 | 0.689,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 10 行
-L3,Table 2,Positive predictive value,2.27% | 3.37% | 72.4%,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 11 行
-L3,Table 2,Alert rate,23.5% | 31.6% | 56.3%,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 12 行
+L3,Table 1,"Age, years, median (IQR)",61.00 (52.00–71.00) | 50.00 (31.00–61.00) | +0.82,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 1 行
+L3,Table 1,"Male sex, n (%)","617 (55.6%) | 85,025 (47.0%) | +0.17",Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 2 行
+L3,Table 1,"First laboratory result obtained in: Outpatient clinic, n (%)","0 (0.0%) | 111,578 (61.7%) | ",Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 3 行
+L3,Table 1,"First laboratory result obtained in: Inpatient ward, n (%)","1,109 (100.0%) | 68,287 (37.8%) | ",Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 4 行
+L3,Table 1,"First laboratory result obtained in: Other, n (%)",0 (0.0%) | 973 (0.5%) | ,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 5 行
+L3,Table 1,"Laboratory results in the 48-h window, n, median (IQR)",52.00 (47.00–90.00) | 33.00 (23.00–46.00) | +1.19,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 6 行
+L3,Table 1,"Results outside the reference interval, n, median (IQR)",8.00 (4.00–15.00) | 3.00 (1.00–7.00) | +0.81,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 7 行
+L3,Table 1,"Proportion of results outside the reference interval, median (IQR)",0.19 (0.09–0.34) | 0.12 (0.04–0.23) | +0.45,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 8 行
+L3,Table 1,"Interval to first blood draw, h, median (IQR)",0.00 (0.00–0.00) | 0.00 (0.00–0.00) | +0.08,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 9 行
+L3,Table 1,"White cell count, x10^9/L, median (IQR)",6.18 (4.76–8.74) | 6.13 (4.87–7.92) | +0.05,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 10 行
+L3,Table 1,"Haemoglobin, g/L, median (IQR)",125.00 (110.00–138.00) | 131.00 (120.00–142.00) | -0.34,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 11 行
+L3,Table 1,"Platelet count, x10^9/L, median (IQR)",204.00 (159.00–254.00) | 224.00 (180.00–273.00) | -0.22,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 12 行
+L3,Table 1,"Neutrophil percentage, %, median (IQR)",68.70 (58.10–80.90) | 62.90 (54.50–71.80) | +0.45,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 13 行
+L3,Table 1,"Lymphocyte count, x10^9/L, median (IQR)",1.25 (0.81–1.70) | 1.61 (1.18–2.14) | -0.02,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 14 行
+L3,Table 1,"Creatinine, umol/L, median (IQR)",71.56 (57.09–94.62) | 70.33 (55.17–88.08) | +0.01,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 15 行
+L3,Table 1,"Albumin, g/L, median (IQR)",38.54 (34.87–41.36) | 41.95 (38.44–44.75) | -0.63,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 16 行
+L3,Table 1,"Total bilirubin, umol/L, median (IQR)",12.49 (9.59–16.99) | 12.49 (9.53–16.66) | +0.10,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 17 行
+L3,Table 1,"Prothrombin time, s, median (IQR)",11.10 (10.50–12.10) | 10.90 (10.30–11.70) | +0.14,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 18 行
+L3,Table 1,"Fibrinogen, g/L, median (IQR)",3.89 (3.27–5.00) | 3.72 (3.15–4.56) | +0.22,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 19 行
+L3,Table 1,"Sodium, mmol/L, median (IQR)",141.00 (138.70–142.80) | 141.20 (139.50–142.70) | -0.17,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 20 行
+L3,Table 1,"Potassium, mmol/L, median (IQR)",4.09 (3.84–4.36) | 4.16 (3.91–4.42) | -0.08,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 21 行
+L3,Table 2,Events / prevalence,"1,109 / 0.61% | 1,109 / 1.64% | 1,109 / 50%",Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 1 行
+L3,Table 2,Penalty C / retained coefficients,0.03 / 46 of 193 | 0.1 / 64 of 193 | 1.0 / 97 of 193,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 2 行
+L3,Table 2,Training AUC,0.870 | 0.761 | 0.858,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 3 行
+L3,Table 2,Test AUC (95% CI),0.883 (0.867–0.899) | 0.749 (0.721–0.776) | 0.816 (0.790–0.841),Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 4 行
+L3,Table 2,Average precision,0.108 | 0.241 | 0.555,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 5 行
+L3,Table 2,Calibration slope,1.168 | 1.048 | -,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 6 行
+L3,Table 2,Observed / expected,0.958 | 0.971 | 1.007 (0.500 vs 0.497),Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 7 行
+L3,Table 2,Brier score,0.00573 | 0.01388 | 0.1712,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 8 行
+L3,Table 2,Sensitivity at Youden threshold,0.874 | 0.649 | 0.814,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 9 行
+L3,Table 2,Specificity at Youden threshold,0.769 | 0.689 | 0.689,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 10 行
+L3,Table 2,Positive predictive value,2.27% | 3.37% | 72.4%,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 11 行
+L3,Table 2,Alert rate,23.5% | 31.6% | 56.3%,Manuscript_v1.42.docx,,9a34dd0ea37c4c09,第 12 行
