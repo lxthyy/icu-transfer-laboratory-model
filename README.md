@@ -10,7 +10,7 @@ pipeline end to end when the two source tables are available locally (see *Input
 ---
 
 > Repository: https://github.com/lxthyy/icu-transfer-laboratory-model
-> Archived release: Zenodo DOI to be added at publication
+> Version: v1.42
 
 
 ## 1. What is here
