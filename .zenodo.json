@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "Analysis code for: Routine laboratory data for predicting intensive care unit transfer",
-  "description": "Analysis pipeline reproducing every estimate reported in a retrospective prediction model study of 30-day intensive care unit transfer based on routine laboratory data: cohort construction, L1-penalised logistic regression at the natural prevalence, temporal validation, seven classes of sensitivity analysis, the complete 30-day follow-up analysis, and and the Kaplan-Meier and inverse-probability-of-censoring corrections for administrative censoring. The package contains code only; record-level data are not included.",
+  "description": "Analysis pipeline reproducing every estimate reported in a retrospective prediction model study of 30-day intensive care unit transfer based on routine laboratory data: cohort construction, L1-penalised logistic regression at the natural prevalence, temporal validation, seven classes of sensitivity analysis, the complete 30-day follow-up analysis, and and the Kaplan-Meier and inverse-probability-of-censoring corrections for administrative censoring. The package contains the analysis code, the model specifications and de-identified test-set predictions; no record-level data are included.",
   "creators": [
     {
       "name": "Li, Xin",
