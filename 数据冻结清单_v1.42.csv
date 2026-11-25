@@ -1,61 +1,91 @@
 ﻿tier,section,item,value,source,quantity_alias,source_sha256_16,where
-L1,全队列模型,n_eligible,181947,res_a4_summary_full.csv,primary.n_eligible,dcfd3573da741d15,
-L1,全队列模型,n_cases,1109,res_a4_summary_full.csv,primary.n_cases,dcfd3573da741d15,
-L1,全队列模型,prevalence_pct,0.6095,res_a4_summary_full.csv,primary.prevalence_pct,dcfd3573da741d15,
-L1,全队列模型,C_selected,0.03,res_a4_summary_full.csv,primary.C_selected,dcfd3573da741d15,
-L1,全队列模型,n_features_retained,46,res_a4_summary_full.csv,primary.n_features_retained,dcfd3573da741d15,
-L1,全队列模型,test_auc,0.883,res_a4_summary_full.csv,primary.test_auc,dcfd3573da741d15,
-L1,全队列模型,test_auc_lo,0.8666,res_a4_summary_full.csv,primary.test_auc_lo,dcfd3573da741d15,
-L1,全队列模型,test_auc_hi,0.8985,res_a4_summary_full.csv,primary.test_auc_hi,dcfd3573da741d15,
-L1,全队列模型,test_ap,0.1081,res_a4_summary_full.csv,primary.test_ap,dcfd3573da741d15,
-L1,全队列模型,calibration_slope,1.1675,res_a4_summary_full.csv,primary.calibration_slope,dcfd3573da741d15,
-L1,全队列模型,oe_ratio,0.9582,res_a4_summary_full.csv,primary.oe_ratio,dcfd3573da741d15,
-L1,全队列模型,brier,0.005729,res_a4_summary_full.csv,primary.brier,dcfd3573da741d15,
-L1,病区模型,C_fixed,0.1,res_a4_summary_ward.csv,ward.C_fixed,0a06ccb98a2c2b1c,
-L1,全队列模型,n_test,54585,res_a4_summary_full.csv,ward.n_test,dcfd3573da741d15,
-L1,病区模型,n_features_retained,64,res_a4_summary_ward.csv,ward.n_features_retained,0a06ccb98a2c2b1c,
-L1,病区模型,test_auc,0.7491,res_a4_summary_ward.csv,ward.test_auc,0a06ccb98a2c2b1c,
-L1,病区模型,calibration_slope,1.0478,res_a4_summary_ward.csv,ward.calibration_slope,0a06ccb98a2c2b1c,
-L1,病区模型,oe_ratio,0.971,res_a4_summary_ward.csv,ward.oe_ratio,0a06ccb98a2c2b1c,
-L1,全队列模型,train_auc,0.8697,res_a4_summary_full.csv,temporal.train_auc,dcfd3573da741d15,
+L1,全队列模型,n_eligible,181947,res_a4_summary_full.csv,primary.n_eligible,a3fb542c2c6d5d15,
+L1,全队列模型,n_cases,1109,res_a4_summary_full.csv,primary.n_cases,a3fb542c2c6d5d15,
+L1,全队列模型,prevalence_pct,0.6095,res_a4_summary_full.csv,primary.prevalence_pct,a3fb542c2c6d5d15,
+L1,全队列模型,C_selected,0.03,res_a4_summary_full.csv,primary.C_selected,a3fb542c2c6d5d15,
+L1,全队列模型,n_features_retained,46,res_a4_summary_full.csv,primary.n_features_retained,a3fb542c2c6d5d15,
+L1,全队列模型,test_auc,0.883,res_a4_summary_full.csv,primary.test_auc,a3fb542c2c6d5d15,
+L1,全队列模型,test_auc_lo,0.8666,res_a4_summary_full.csv,primary.test_auc_lo,a3fb542c2c6d5d15,
+L1,全队列模型,test_auc_hi,0.8985,res_a4_summary_full.csv,primary.test_auc_hi,a3fb542c2c6d5d15,
+L1,全队列模型,test_ap,0.1081,res_a4_summary_full.csv,primary.test_ap,a3fb542c2c6d5d15,
+L1,全队列模型,calibration_slope,1.1675,res_a4_summary_full.csv,primary.calibration_slope,a3fb542c2c6d5d15,
+L1,全队列模型,oe_ratio,0.9582,res_a4_summary_full.csv,primary.oe_ratio,a3fb542c2c6d5d15,
+L1,全队列模型,brier,0.005729,res_a4_summary_full.csv,primary.brier,a3fb542c2c6d5d15,
+L2,全队列模型,n_test,54585,res_a4_summary_full.csv,,a3fb542c2c6d5d15,
+L2,全队列模型,train_auc,0.8697,res_a4_summary_full.csv,,a3fb542c2c6d5d15,
+L1,病区模型,C_fixed,0.1,res_a4_summary_ward.csv,ward.C_fixed,29bed7b57bd9cfcf,
+L1,病区模型,n_features_retained,64,res_a4_summary_ward.csv,ward.n_features_retained,29bed7b57bd9cfcf,
+L1,病区模型,test_auc,0.7491,res_a4_summary_ward.csv,ward.test_auc,29bed7b57bd9cfcf,
+L1,病区模型,calibration_slope,1.0478,res_a4_summary_ward.csv,ward.calibration_slope,29bed7b57bd9cfcf,
+L1,病区模型,oe_ratio,0.971,res_a4_summary_ward.csv,ward.oe_ratio,29bed7b57bd9cfcf,
+L2,病区模型,n_eligible,67594,res_a4_summary_ward.csv,,29bed7b57bd9cfcf,
+L2,病区模型,test_ap,0.2406,res_a4_summary_ward.csv,,29bed7b57bd9cfcf,
+L1,病区模型,n_test,20279,res_a4_summary_ward.csv,ward.n_test,29bed7b57bd9cfcf,
 L1,时间验证,validation_auc,0.8589,res_a10_temporal.csv,temporal.validation_auc,5695a7969863d73f,
+L2,时间验证,C_selected,0.1,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,design,"full cohort, no matching, no class weights",res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,training period,2026-01-01 to 2026-03-31,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation period,2026-04-01 to 2026-05-31,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,n_train,96029,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,n_train_cases,577,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,n_validation,59002,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,n_validation_cases,380,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,n_features,193,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,n_retained,83,res_a10_temporal.csv,,5695a7969863d73f,
+L1,时间验证,train_auc,0.885,res_a10_temporal.csv,temporal.train_auc,5695a7969863d73f,
+L2,时间验证,validation_auc_lo,0.8415,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_auc_hi,0.8742,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_ap,0.0909,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_ap_lo,0.0692,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_ap_hi,0.1256,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_brier,0.006118,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_calibration_slope,1.04,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_calibration_intercept,0.253,res_a10_temporal.csv,,5695a7969863d73f,
+L2,时间验证,validation_oe_ratio,1.0853,res_a10_temporal.csv,,5695a7969863d73f,
 L1,时间窗,48-hour AUC,0.9851,res_a17_horizon48.csv,horizon.48h_auc,96a297fdd1d54dae,
-L1,时间窗,7-day AUC,0.8973,res_a16_horizon.csv,horizon.7d_auc,9ba6d1e7ddbf037b,
-L1,时间窗,14-day AUC,0.8864,res_a16_horizon.csv,horizon.14d_auc,9ba6d1e7ddbf037b,
-L1,时间窗,30-day AUC,0.8830,res_a16_horizon.csv,horizon.30d_auc,9ba6d1e7ddbf037b,
-L1,消融,no-ordering 测试AUC,0.8663,res_a17_split_ablation.csv,ablation.no_ordering_auc,bd3f4fc608257c61,
-L1,消融,no-ordering 保留变量,80,res_a17_split_ablation.csv,ablation.no_ordering_retained,bd3f4fc608257c61,
-L1,消融,no-abnormality 测试AUC,0.8830,res_a17_split_ablation.csv,ablation.no_abnormality_auc,bd3f4fc608257c61,
+L1,时间窗,7-day AUC,0.8973,res_a16_horizon.csv,horizon.7d_auc,c4dd804461ae30ff,
+L1,时间窗,14-day AUC,0.8864,res_a16_horizon.csv,horizon.14d_auc,c4dd804461ae30ff,
+L1,时间窗,30-day AUC,0.8830,res_a16_horizon.csv,horizon.30d_auc,c4dd804461ae30ff,
+L1,消融,no-ordering 测试AUC,0.8663,res_a17_split_ablation.csv,ablation.no_ordering_auc,99918448a48fae1f,"post-correction rerun (external machine, 37/37 PASS); the archived res_a17_split_ablation.csv is the pre-correction build (0.8659/81)"
+L1,消融,no-ordering 保留变量,80,res_a17_split_ablation.csv,ablation.no_ordering_retained,99918448a48fae1f,"post-correction rerun (external machine, 37/37 PASS); the archived res_a17_split_ablation.csv is the pre-correction build (0.8659/81)"
+L1,消融,no-abnormality 测试AUC,0.8830,res_a17_split_ablation.csv,ablation.no_abnormality_auc,99918448a48fae1f,
+L2,消融,no-abnormality 保留变量,45,res_a17_split_ablation.csv,,99918448a48fae1f,
+L2,消融,no-count 测试AUC,0.8547,res_a6_nocount.csv,,d812fbe8ff378038,
+L2,消融,no-count 保留变量,79,res_a6_nocount.csv,,d812fbe8ff378038,
 L1,去计数敏感性,测试AUC,0.8547,res_a6_nocount.csv,ablation.no_count_auc,d812fbe8ff378038,
-L1,病区模型,n_eligible,67594,res_a4_summary_ward.csv,followup.n_eligible,0a06ccb98a2c2b1c,
-L1,时间验证,C_selected,0.1,res_a10_temporal.csv,followup.C_selected,5695a7969863d73f,
+L2,去计数敏感性,保留变量数,143,res_a6_nocount.csv,,d812fbe8ff378038,
+L2,去计数敏感性,C,0.1,res_a6_nocount.csv,,d812fbe8ff378038,
+L2,去计数敏感性,AP,0.0994,res_a6_nocount.csv,,d812fbe8ff378038,
+L2,去计数敏感性,Brier,0.00576,res_a6_nocount.csv,,d812fbe8ff378038,
 L1,完整随访,n_features_retained,49,res_a4_summary_full.csv,followup.n_features_retained,dcfd3573da741d15,
 L1,完整随访,test_auc,0.8783,res_a4_summary_full.csv,followup.test_auc,dcfd3573da741d15,
-L1,病区模型,test_ap,0.2406,res_a4_summary_ward.csv,followup.test_ap,0a06ccb98a2c2b1c,
 L1,完整随访,calibration_slope,1.0981,res_a4_summary_full.csv,followup.calibration_slope,dcfd3573da741d15,
 L1,完整随访,oe_ratio,0.9437,res_a4_summary_full.csv,followup.oe_ratio,dcfd3573da741d15,
+L1,完整随访,n_eligible,155031,res_a4_summary_full.csv,followup.n_eligible,dcfd3573da741d15,
+L1,完整随访,C_selected,0.03,res_a4_summary_full.csv,followup.C_selected,dcfd3573da741d15,
+L1,完整随访,test_ap,0.073,res_a4_summary_full.csv,followup.test_ap,dcfd3573da741d15,
 L1,删失校正,Kaplan-Meier 30天累积发生率,0.62763%,censoring_report_v142.txt,censoring.km_30d,eeaf091a19a63490,
 L1,删失校正,校正后缺口,32.9 events (2.89% of the corrected total),censoring_report_v142.txt,censoring.deficit,eeaf091a19a63490,
-L2,病区报警预算,top 1% 报警人数,203,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 1% 检出病例,85,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 1% 敏感度,0.255,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 1% PPV,0.4187,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 1% 每例筛查数,2.4,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 2% 报警人数,406,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 2% 检出病例,97,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 2% 敏感度,0.291,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 2% PPV,0.2389,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 2% 每例筛查数,4.2,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 5% 报警人数,"1,014",res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 5% 检出病例,119,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 5% 敏感度,0.357,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 5% PPV,0.1174,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 5% 每例筛查数,8.5,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 10% 报警人数,"2,028",res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 10% 检出病例,145,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 10% 敏感度,0.435,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 10% PPV,0.0715,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
-L2,病区报警预算,top 10% 每例筛查数,14.0,res_a4_alert_budget_ward.csv,,c3f16d12713f4f00,
+L2,病区报警预算,top 1% 报警人数,203,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 1% 检出病例,85,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 1% 敏感度,0.255,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 1% PPV,0.4187,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 1% 每例筛查数,2.4,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 2% 报警人数,406,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 2% 检出病例,97,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 2% 敏感度,0.291,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 2% PPV,0.2389,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 2% 每例筛查数,4.2,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 5% 报警人数,"1,014",res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 5% 检出病例,119,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 5% 敏感度,0.357,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 5% PPV,0.1174,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 5% 每例筛查数,8.5,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 10% 报警人数,"2,028",res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 10% 检出病例,145,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 10% 敏感度,0.435,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 10% PPV,0.0715,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
+L2,病区报警预算,top 10% 每例筛查数,14.0,res_a4_alert_budget_ward.csv,,befb018b4a6fbc12,
 L2,匹配样本三臂,"A as-submitted (no winsor, weights)｜C",1.0,res_a5_matched_arms.csv,,c050403247d9904a,
 L2,匹配样本三臂,"A as-submitted (no winsor, weights)｜保留变量",97,res_a5_matched_arms.csv,,c050403247d9904a,
 L2,匹配样本三臂,"A as-submitted (no winsor, weights)｜测试AUC",0.8160,res_a5_matched_arms.csv,,c050403247d9904a,
@@ -71,62 +101,36 @@ L2,匹配样本三臂,"C matched, weights kept｜保留变量",37,res_a5_matched
 L2,匹配样本三臂,"C matched, weights kept｜测试AUC",0.8157,res_a5_matched_arms.csv,,c050403247d9904a,
 L2,匹配样本三臂,"C matched, weights kept｜AP",0.5497,res_a5_matched_arms.csv,,c050403247d9904a,
 L2,匹配样本三臂,"C matched, weights kept｜Brier",0.1758,res_a5_matched_arms.csv,,c050403247d9904a,
-L2,去计数敏感性,保留变量数,143,res_a6_nocount.csv,,d812fbe8ff378038,
-L2,去计数敏感性,C,0.1,res_a6_nocount.csv,,d812fbe8ff378038,
-L2,去计数敏感性,AP,0.0994,res_a6_nocount.csv,,d812fbe8ff378038,
-L2,去计数敏感性,Brier,0.00576,res_a6_nocount.csv,,d812fbe8ff378038,
-L2,时间验证,design,"full cohort, no matching, no class weights",res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,training period,2026-01-01 to 2026-03-31,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation period,2026-04-01 to 2026-05-31,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,n_train,96029,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,n_train_cases,577,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,n_validation,59002,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,n_validation_cases,380,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,n_features,193,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,n_retained,83,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,train_auc,0.885,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_auc_lo,0.8415,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_auc_hi,0.8742,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_ap,0.0909,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_ap_lo,0.0692,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_ap_hi,0.1256,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_brier,0.006118,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_calibration_slope,1.04,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_calibration_intercept,0.253,res_a10_temporal.csv,,5695a7969863d73f,
-L2,时间验证,validation_oe_ratio,1.0853,res_a10_temporal.csv,,5695a7969863d73f,
-L2,消融,no-abnormality 保留变量,45,res_a17_split_ablation.csv,,bd3f4fc608257c61,
-L2,消融,no-count 测试AUC,0.8547,res_a6_nocount.csv,,d812fbe8ff378038,
-L2,消融,no-count 保留变量,79,res_a6_nocount.csv,,d812fbe8ff378038,
-L3,Table 1,"Age, years, median (IQR)",61.00 (52.00–71.00) | 50.00 (31.00–61.00) | +0.82,Manuscript_v1.42.docx,,b44e315abfe9748d,第 1 行
-L3,Table 1,"Male sex, n (%)","617 (55.6%) | 85,025 (47.0%) | +0.17",Manuscript_v1.42.docx,,b44e315abfe9748d,第 2 行
-L3,Table 1,"First laboratory result obtained in: Outpatient clinic, n (%)","0 (0.0%) | 111,578 (61.7%) | ",Manuscript_v1.42.docx,,b44e315abfe9748d,第 3 行
-L3,Table 1,"First laboratory result obtained in: Inpatient ward, n (%)","1,109 (100.0%) | 68,287 (37.8%) | ",Manuscript_v1.42.docx,,b44e315abfe9748d,第 4 行
-L3,Table 1,"First laboratory result obtained in: Other, n (%)",0 (0.0%) | 973 (0.5%) | ,Manuscript_v1.42.docx,,b44e315abfe9748d,第 5 行
-L3,Table 1,"Laboratory results in the 48-h window, n, median (IQR)",52.00 (47.00–90.00) | 33.00 (23.00–46.00) | +1.19,Manuscript_v1.42.docx,,b44e315abfe9748d,第 6 行
-L3,Table 1,"Results outside the reference interval, n, median (IQR)",8.00 (4.00–15.00) | 3.00 (1.00–7.00) | +0.81,Manuscript_v1.42.docx,,b44e315abfe9748d,第 7 行
-L3,Table 1,"Proportion of results outside the reference interval, median (IQR)",0.19 (0.09–0.34) | 0.12 (0.04–0.23) | +0.45,Manuscript_v1.42.docx,,b44e315abfe9748d,第 8 行
-L3,Table 1,"Interval to first blood draw, h, median (IQR)",0.00 (0.00–0.00) | 0.00 (0.00–0.00) | +0.08,Manuscript_v1.42.docx,,b44e315abfe9748d,第 9 行
-L3,Table 1,"White cell count, x10^9/L, median (IQR)",6.18 (4.76–8.74) | 6.13 (4.87–7.92) | +0.05,Manuscript_v1.42.docx,,b44e315abfe9748d,第 10 行
-L3,Table 1,"Haemoglobin, g/L, median (IQR)",125.00 (110.00–138.00) | 131.00 (120.00–142.00) | -0.34,Manuscript_v1.42.docx,,b44e315abfe9748d,第 11 行
-L3,Table 1,"Platelet count, x10^9/L, median (IQR)",204.00 (159.00–254.00) | 224.00 (180.00–273.00) | -0.22,Manuscript_v1.42.docx,,b44e315abfe9748d,第 12 行
-L3,Table 1,"Neutrophil percentage, %, median (IQR)",68.70 (58.10–80.90) | 62.90 (54.50–71.80) | +0.45,Manuscript_v1.42.docx,,b44e315abfe9748d,第 13 行
-L3,Table 1,"Lymphocyte count, x10^9/L, median (IQR)",1.25 (0.81–1.70) | 1.61 (1.18–2.14) | -0.02,Manuscript_v1.42.docx,,b44e315abfe9748d,第 14 行
-L3,Table 1,"Creatinine, umol/L, median (IQR)",71.56 (57.09–94.62) | 70.33 (55.17–88.08) | +0.01,Manuscript_v1.42.docx,,b44e315abfe9748d,第 15 行
-L3,Table 1,"Albumin, g/L, median (IQR)",38.54 (34.87–41.36) | 41.95 (38.44–44.75) | -0.63,Manuscript_v1.42.docx,,b44e315abfe9748d,第 16 行
-L3,Table 1,"Total bilirubin, umol/L, median (IQR)",12.49 (9.59–16.99) | 12.49 (9.53–16.66) | +0.10,Manuscript_v1.42.docx,,b44e315abfe9748d,第 17 行
-L3,Table 1,"Prothrombin time, s, median (IQR)",11.10 (10.50–12.10) | 10.90 (10.30–11.70) | +0.14,Manuscript_v1.42.docx,,b44e315abfe9748d,第 18 行
-L3,Table 1,"Fibrinogen, g/L, median (IQR)",3.89 (3.27–5.00) | 3.72 (3.15–4.56) | +0.22,Manuscript_v1.42.docx,,b44e315abfe9748d,第 19 行
-L3,Table 1,"Sodium, mmol/L, median (IQR)",141.00 (138.70–142.80) | 141.20 (139.50–142.70) | -0.17,Manuscript_v1.42.docx,,b44e315abfe9748d,第 20 行
-L3,Table 1,"Potassium, mmol/L, median (IQR)",4.09 (3.84–4.36) | 4.16 (3.91–4.42) | -0.08,Manuscript_v1.42.docx,,b44e315abfe9748d,第 21 行
-L3,Table 2,Events / prevalence,"1,109 / 0.61% | 1,109 / 1.64% | 1,109 / 50%",Manuscript_v1.42.docx,,b44e315abfe9748d,第 1 行
-L3,Table 2,Penalty C / retained coefficients,0.03 / 46 of 193 | 0.1 / 64 of 193 | 1.0 / 97 of 193,Manuscript_v1.42.docx,,b44e315abfe9748d,第 2 行
-L3,Table 2,Training AUC,0.870 | 0.761 | 0.858,Manuscript_v1.42.docx,,b44e315abfe9748d,第 3 行
-L3,Table 2,Test AUC (95% CI),0.883 (0.867–0.899) | 0.749 (0.721–0.776) | 0.816 (0.790–0.841),Manuscript_v1.42.docx,,b44e315abfe9748d,第 4 行
-L3,Table 2,Average precision,0.108 | 0.241 | 0.555,Manuscript_v1.42.docx,,b44e315abfe9748d,第 5 行
-L3,Table 2,Calibration slope,1.168 | 1.048 | -,Manuscript_v1.42.docx,,b44e315abfe9748d,第 6 行
-L3,Table 2,Observed / expected,0.958 | 0.971 | 1.007 (0.500 vs 0.497),Manuscript_v1.42.docx,,b44e315abfe9748d,第 7 行
-L3,Table 2,Brier score,0.00573 | 0.01388 | 0.1712,Manuscript_v1.42.docx,,b44e315abfe9748d,第 8 行
-L3,Table 2,Sensitivity at Youden threshold,0.874 | 0.649 | 0.814,Manuscript_v1.42.docx,,b44e315abfe9748d,第 9 行
-L3,Table 2,Specificity at Youden threshold,0.769 | 0.689 | 0.689,Manuscript_v1.42.docx,,b44e315abfe9748d,第 10 行
-L3,Table 2,Positive predictive value,2.27% | 3.37% | 72.4%,Manuscript_v1.42.docx,,b44e315abfe9748d,第 11 行
-L3,Table 2,Alert rate,23.5% | 31.6% | 56.3%,Manuscript_v1.42.docx,,b44e315abfe9748d,第 12 行
+L3,Table 1,"Age, years, median (IQR)",61.00 (52.00–71.00) | 50.00 (31.00–61.00) | +0.82,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 1 行
+L3,Table 1,"Male sex, n (%)","617 (55.6%) | 85,025 (47.0%) | +0.17",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 2 行
+L3,Table 1,"First laboratory result obtained in: Outpatient clinic, n (%)","0 (0.0%) | 111,578 (61.7%) | ",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 3 行
+L3,Table 1,"First laboratory result obtained in: Inpatient ward, n (%)","1,109 (100.0%) | 68,287 (37.8%) | ",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 4 行
+L3,Table 1,"First laboratory result obtained in: Other, n (%)",0 (0.0%) | 973 (0.5%) | ,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 5 行
+L3,Table 1,"Laboratory results in the 48-h window, n, median (IQR)",52.00 (47.00–90.00) | 33.00 (23.00–46.00) | +1.19,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 6 行
+L3,Table 1,"Results outside the reference interval, n, median (IQR)",8.00 (4.00–15.00) | 3.00 (1.00–7.00) | +0.81,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 7 行
+L3,Table 1,"Proportion of results outside the reference interval, median (IQR)",0.19 (0.09–0.34) | 0.12 (0.04–0.23) | +0.45,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 8 行
+L3,Table 1,"Interval to first blood draw, h, median (IQR)",0.00 (0.00–0.00) | 0.00 (0.00–0.00) | +0.08,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 9 行
+L3,Table 1,"White cell count, x10^9/L, median (IQR)",6.18 (4.76–8.74) | 6.13 (4.87–7.92) | +0.05,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 10 行
+L3,Table 1,"Haemoglobin, g/L, median (IQR)",125.00 (110.00–138.00) | 131.00 (120.00–142.00) | -0.34,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 11 行
+L3,Table 1,"Platelet count, x10^9/L, median (IQR)",204.00 (159.00–254.00) | 224.00 (180.00–273.00) | -0.22,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 12 行
+L3,Table 1,"Neutrophil percentage, %, median (IQR)",68.70 (58.10–80.90) | 62.90 (54.50–71.80) | +0.45,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 13 行
+L3,Table 1,"Lymphocyte count, x10^9/L, median (IQR)",1.25 (0.81–1.70) | 1.61 (1.18–2.14) | -0.02,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 14 行
+L3,Table 1,"Creatinine, umol/L, median (IQR)",71.56 (57.09–94.62) | 70.33 (55.17–88.08) | +0.01,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 15 行
+L3,Table 1,"Albumin, g/L, median (IQR)",38.54 (34.87–41.36) | 41.95 (38.44–44.75) | -0.63,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 16 行
+L3,Table 1,"Total bilirubin, umol/L, median (IQR)",12.49 (9.59–16.99) | 12.49 (9.53–16.66) | +0.10,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 17 行
+L3,Table 1,"Prothrombin time, s, median (IQR)",11.10 (10.50–12.10) | 10.90 (10.30–11.70) | +0.14,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 18 行
+L3,Table 1,"Fibrinogen, g/L, median (IQR)",3.89 (3.27–5.00) | 3.72 (3.15–4.56) | +0.22,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 19 行
+L3,Table 1,"Sodium, mmol/L, median (IQR)",141.00 (138.70–142.80) | 141.20 (139.50–142.70) | -0.17,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 20 行
+L3,Table 1,"Potassium, mmol/L, median (IQR)",4.09 (3.84–4.36) | 4.16 (3.91–4.42) | -0.08,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 21 行
+L3,Table 2,Events / prevalence,"1,109 / 0.61% | 1,109 / 1.64% | 1,109 / 50%",Manuscript_v1.42.docx,,6e37b632a345fcaa,第 1 行
+L3,Table 2,Penalty C / retained coefficients,0.03 / 46 of 193 | 0.1 / 64 of 193 | 1.0 / 97 of 193,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 2 行
+L3,Table 2,Training AUC,0.870 | 0.761 | 0.858,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 3 行
+L3,Table 2,Test AUC (95% CI),0.883 (0.867–0.899) | 0.749 (0.721–0.776) | 0.816 (0.790–0.841),Manuscript_v1.42.docx,,6e37b632a345fcaa,第 4 行
+L3,Table 2,Average precision,0.108 | 0.241 | 0.555,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 5 行
+L3,Table 2,Calibration slope,1.168 | 1.048 | -,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 6 行
+L3,Table 2,Observed / expected,0.958 | 0.971 | 1.007 (0.500 vs 0.497),Manuscript_v1.42.docx,,6e37b632a345fcaa,第 7 行
+L3,Table 2,Brier score,0.00573 | 0.01388 | 0.1712,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 8 行
+L3,Table 2,Sensitivity at Youden threshold,0.874 | 0.649 | 0.814,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 9 行
+L3,Table 2,Specificity at Youden threshold,0.769 | 0.689 | 0.689,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 10 行
+L3,Table 2,Positive predictive value,2.27% | 3.37% | 72.4%,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 11 行
+L3,Table 2,Alert rate,23.5% | 31.6% | 56.3%,Manuscript_v1.42.docx,,6e37b632a345fcaa,第 12 行
