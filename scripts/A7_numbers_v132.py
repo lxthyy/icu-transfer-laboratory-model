@@ -8,6 +8,7 @@ import pandas as pd, numpy as np
 ICU_DATA_DIR = os.environ.get("ICU_DATA_DIR", "data")
 BUILD = os.environ.get("ICU_BUILD_DIR", os.path.join(ICU_DATA_DIR, "_ICU预警成稿", "build"))
 OUT = os.environ.get("ICU_OUT_DIR", os.path.join(BUILD, "..", "02_结果输出", "v1.32_全队列"))
+RESULTS = os.path.dirname(OUT)          # sibling folders A16/A17/A18/Z2 live here
 rows = []
 def add(section, item, value, source):
     rows.append(dict(section=section, item=item, value=value, source=source))
@@ -26,7 +27,7 @@ def dep_cat(s):
     return "其他"
 cat = sub["first_dept"].map(dep_cat)
 is_ward = (cat == "病房/病区") & (~sub["first_dept"].isin(ICU_EXACT))
-src = "build_v132/labels.parquet + feat_48h_orig.parquet"
+src = f"{os.path.basename(BUILD)}/labels.parquet + feat_48h_orig.parquet"
 add("队列", "全部住院记录", f"{len(lab):,}", src)
 add("队列", "有特征行的合格队列", f"{len(ids):,}", src)
 add("队列", "30天转ICU病例", f"{int(sub['case_30d'].sum()):,}", src)
@@ -113,6 +114,43 @@ p = os.path.join(OUT, "res_a10_temporal.csv")
 if os.path.exists(p):
     for _, r in pd.read_csv(p).iterrows():
         add("时间验证", str(r["item"]), str(r["value"]), os.path.basename(p))
+
+# ---- horizons ----
+p = os.path.join(RESULTS, "A16_horizon", "res_a16_horizon.csv")
+if os.path.exists(p):
+    for _, r in pd.read_csv(p).iterrows():
+        add("时间窗", f"{r['horizon']} AUC", f"{r['test_auc']:.4f}", os.path.basename(p))
+p = os.path.join(RESULTS, "A17_split_and_48h", "res_a17_horizon48.csv")
+if os.path.exists(p):
+    for _, r in pd.read_csv(p).iterrows():
+        add("时间窗", f"{r['horizon']} AUC", f"{r['test_auc']:.4f}", os.path.basename(p))
+
+# ---- ablations ----
+p = os.path.join(RESULTS, "A17_split_and_48h", "res_a17_split_ablation.csv")
+if os.path.exists(p):
+    for _, r in pd.read_csv(p).iterrows():
+        add("消融", f"{r['arm']} 测试AUC", f"{r['test_auc']:.4f}", os.path.basename(p))
+        add("消融", f"{r['arm']} 保留变量", str(int(r["retained"])), os.path.basename(p))
+p = os.path.join(RESULTS, "A6_nocount_v132", "res_a6_nocount.csv")
+if os.path.exists(p):
+    for _, r in pd.read_csv(p).iterrows():
+        add("消融", f"{r['arm']} 测试AUC", f"{r['test_auc']:.4f}", os.path.basename(p))
+        add("消融", f"{r['arm']} 保留变量", str(int(r["retained"])), os.path.basename(p))
+
+# ---- complete follow-up ----
+p = os.path.join(RESULTS, "A18_complete_followup_C003_v142", "res_a4_summary_full.csv")
+if os.path.exists(p):
+    for _, r in pd.read_csv(p).iterrows():
+        add("完整随访", str(r["item"]), str(r["value"]), os.path.basename(p))
+
+# ---- censoring correction ----
+p = os.path.join(RESULTS, "Z2_censoring_km_v142", "censoring_report_v142.txt")
+if os.path.exists(p):
+    for line in open(p, encoding="utf-8").read().splitlines():
+        if line.startswith("Kaplan-Meier"):
+            add("删失校正", "Kaplan-Meier 30天累积发生率", line.split(":", 1)[1].strip(), os.path.basename(p))
+        if line.startswith("deficit"):
+            add("删失校正", "校正后缺口", line.split(":", 1)[1].strip(), os.path.basename(p))
 
 # ---- mapping audit ----
 p = os.path.join(OUT, "res_a8_map_audit_final.csv")
