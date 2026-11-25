@@ -4,8 +4,10 @@ Reproduction package for the manuscript *“Routine laboratory data for predicti
 care unit transfer: a retrospective prediction model study with temporal validation”*
 (International Journal of Medical Informatics, manuscript IJMEDI-D-26-05531).
 
-The package contains **code only**. No patient-level data are included or required to run the
-pipeline end to end when the two source tables are available locally (see *Inputs*).
+The package contains the analysis code together with three kinds of derived, non-identifiable
+artefact: the model specifications, the test-set predictions and the frozen list of reported
+numbers. No patient-level records are included; the pipeline runs end to end when the two source
+tables are available locally (see *Inputs*).
 
 ---
 
@@ -36,6 +38,16 @@ scripts/A7_numbers_v132.py              consolidates every reported number with 
 run_all.py                              runs the pipeline in order, then checks every reported number against expected_numbers.csv
 expected_numbers.csv                    the values a successful run must reproduce
 requirements.txt
+```
+
+Derived artefacts — no identifiers, no record-level variables:
+
+```
+predictions_primary.csv             test-set predictions of the primary model (columns: y, p)
+predictions_complete_followup.csv   test-set predictions of the complete-follow-up model (y, p)
+S6_model_specification.csv          model specification of the primary model
+model_spec_complete_followup.csv    model specification of the complete-follow-up model
+数据冻结清单_v1.42.csv                  the 131 reported numbers, each with its source file and tier
 ```
 
 Scripts that audit the manuscript files themselves (sentence audit, cross-check, typo scan) are
