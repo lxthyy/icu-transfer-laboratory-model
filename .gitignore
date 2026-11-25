@@ -4,5 +4,3 @@ __pycache__/
 build/
 results/
 *.parquet
-*.csv
-!expected_numbers.csv
