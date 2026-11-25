@@ -9,10 +9,6 @@ pipeline end to end when the two source tables are available locally (see *Input
 
 ---
 
-> Repository: https://github.com/lxthyy/icu-transfer-laboratory-model
-> Version: v1.42
-
-
 ## 1. What is here
 
 ```
@@ -31,10 +27,13 @@ scripts/A14_drift_audit.py              column-level comparison of two builds (o
 scripts/A15_determinism.py              ten consecutive fits, MD5 of coefficients and predictions
 scripts/A18_complete_followup_C003_v142.py  complete 30-day follow-up sensitivity analysis
 scripts/Z2_censoring_km_v142.py         Kaplan-Meier correction for administrative censoring
+scripts/Z3_ipcw_v142.py                 IPCW correction for administrative censoring
+`Z3_ipcw_v142.py` writes `res_z3_ipcw.csv`, the numbers reported in Table S13. Those values are not part of the 37-item check, which covers the main and sensitivity analyses.
+
 scripts/B1b_table1_fullcohort.py        Table 1
 scripts/A8e_map_audit_table.py          audit table for the synonym (harmonisation) rules
 scripts/A7_numbers_v132.py              consolidates every reported number with its source file
-run_all.py                              runs the pipeline in order and checks the key numbers
+run_all.py                              runs the pipeline in order, then checks every reported number against expected_numbers.csv
 expected_numbers.csv                    the values a successful run must reproduce
 requirements.txt
 ```
@@ -68,7 +67,9 @@ python run_all.py --data-root /path/to/working/root
 
 `run_all.py` creates the folder layout, sets the environment variables, runs the scripts in the
 order below, and writes `run_manifest.csv` (one row per script: exit code, wall time) and
-`key_numbers.csv` (the values to compare with `expected_numbers.csv`).
+`key_numbers.csv`. It then compares every value with `expected_numbers.csv` and exits
+non-zero if any value is missing or out of tolerance. `--check-only` repeats that comparison
+against an existing results folder without rerunning any model.
 
 Order and dependencies:
 
@@ -121,7 +122,7 @@ produces each. The main ones:
 
 ## 6. Environment used for the reported results
 
-Python 3.13.13; numpy 2.4.4; pandas 2.3.3; scipy 1.17.1; scikit-learn 1.8.0; joblib 1.5.3.
+Python 3.13.13 and 3.14.4 (the pipeline supports 3.10-3.14); numpy 2.4.4; pandas 2.3.3; scipy 1.17.1; scikit-learn 1.8.0; joblib 1.5.3.
 Seeds: split and cross-validation 42, bootstrap 2026 × 1,000 resamples. All scripts are
 deterministic; ten consecutive fits give byte-identical coefficient and prediction vectors.
 
@@ -129,8 +130,8 @@ deterministic; ten consecutive fits give byte-identical coefficient and predicti
 
 The record-level data are not publicly available: they are derived from a hospital laboratory
 information system and, although direct identifiers were removed, they retain dates and clinical
-detail. De-identified data may be made available for verification through the institutional data
-access committee under a data-use agreement. Everything needed to re-derive every reported
-number without the record-level data is supplied here: the model specification (coefficients,
+detail. The discrimination and calibration metrics of the primary and complete-follow-up analyses can be re-derived without the record-level data from the material supplied here: the model specification (coefficients,
 imputation values, winsorisation bounds and standardisation constants) and the test-set
-predictions (outcome and predicted risk only).
+predictions (outcome and predicted risk only) in `predictions_primary.csv` and
+`predictions_complete_followup.csv`, with the corresponding model specifications in
+`S6_model_specification.csv` and `model_spec_complete_followup.csv`.
