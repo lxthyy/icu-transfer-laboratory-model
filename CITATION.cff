@@ -12,7 +12,7 @@ authors:
 version: 1.42
 date-released: 2026-11-25
 license: MIT
-repository-code: "https://github.com/<USER>/<REPO>"
+repository-code: "https://github.com/lxthyy/icu-transfer-laboratory-model"
 doi: "<DOI>"
 keywords:
   - clinical prediction model
